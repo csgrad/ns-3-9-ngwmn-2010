@@ -23,3 +23,7 @@ In addition, to get it compile I required the following changes:
   * ```#include <unistd.h>```
 * In ```src/devices/wimax/wimax-mac-queue.h```
   * remove the word ```private``` from within the class definition
+
+As part of the modifications required to make the code I created work, I had to modify the following files:
+* ```src/applications/udp-client-server/udp-server.cc```
+* ```src/applications/udp-client-server/udp-server.h```
