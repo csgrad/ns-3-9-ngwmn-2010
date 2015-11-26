@@ -9,6 +9,7 @@ The vanilla unmodified version of ns-3.9 can be downloaded here: https://www.nsn
 
 So far I require this to build the simulator: CXXFLAGS="-Wall" ./waf configure --disable-python
 
+### Modifications for compilation in Ubuntu 15.10 ###
 In addition, to get it compile I required the following changes:
 
 * In ```src/core/unix-system-wall-clock-ms.cc```, ```src/helper/animation-interface.cc``` and ```utils/test-runner.cc```
@@ -24,6 +25,10 @@ In addition, to get it compile I required the following changes:
 * In ```src/devices/wimax/wimax-mac-queue.h```
   * remove the word ```private``` from within the class definition
 
+### Modified to Make the Experiment Work ###
 As part of the modifications required to make the code I created work, I had to modify the following files:
 * ```src/applications/udp-client-server/udp-server.cc```
 * ```src/applications/udp-client-server/udp-server.h```
+
+### Compiling and Running the Experiment ###
+```./waf --run=scratch/ngwmn```
