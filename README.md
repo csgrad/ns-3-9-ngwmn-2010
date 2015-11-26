@@ -15,3 +15,9 @@ In addition, to get it compile I required the following changes:
   * ```#include <unistd.h>```
 * In src/common/spectrum-model.h
   * ```#include <cstddef>```
+* In src/devices/emu/emu-net-device.cc
+  * ```#include <sys/types.h>```
+  * ```#include <unistd.h>```
+* In src/devices/tap-bridge/tap-bridge.cc
+  * ```#include <sys/types.h>```
+  * ```#include <unistd.h>```
