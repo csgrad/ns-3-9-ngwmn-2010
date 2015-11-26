@@ -21,3 +21,5 @@ In addition, to get it compile I required the following changes:
 * In src/devices/tap-bridge/tap-bridge.cc
   * ```#include <sys/types.h>```
   * ```#include <unistd.h>```
+* In src/devices/wimax/wimax-mac-queue.h
+  * remove the word ```private``` from within the class definition
