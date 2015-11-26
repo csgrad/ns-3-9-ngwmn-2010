@@ -1,5 +1,5 @@
 # ns-3-9-ngwmn
-Modifications to ns-3.9 used for the publication of the NGWMN/BWCCA 2010 paper "Adaptive Mixed Bias Resource Allocation for Wireless Mesh Networks"
+Modifications to ns-3.9 used for the publication of the NGWMN/BWCCA 2010 paper "[Adaptive Mixed Bias Resource Allocation for Wireless Mesh Networks](http://www.computer.org/csdl/proceedings/bwcca/2010/4236/00/4236a622-abs.html)"
 
 Since it has been some time since this code has been compiled - there are few "tweaks" to get it to run correctly in modern Ubuntu (15.10) with the current g++ (4.9.2).
 
@@ -40,3 +40,5 @@ As part of the modifications required to make the code I created work, I had to 
 
 ### Compiling and Running the Experiment ###
 ```./waf --run=scratch/ngwmn```
+
+All of the configuration for the simulation is specified in the scratch/ngwmn.cc file.
