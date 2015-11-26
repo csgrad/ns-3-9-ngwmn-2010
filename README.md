@@ -13,13 +13,13 @@ In addition, to get it compile I required the following changes:
 
 * In ```src/core/unix-system-wall-clock-ms.cc```, ```src/helper/animation-interface.cc``` and ```utils/test-runner.cc```
   * ```#include <unistd.h>```
-* In src/common/spectrum-model.h
+* In ```src/common/spectrum-model.h```
   * ```#include <cstddef>```
-* In src/devices/emu/emu-net-device.cc
+* In ```src/devices/emu/emu-net-device.cc```
   * ```#include <sys/types.h>```
   * ```#include <unistd.h>```
-* In src/devices/tap-bridge/tap-bridge.cc
+* In ```src/devices/tap-bridge/tap-bridge.cc```
   * ```#include <sys/types.h>```
   * ```#include <unistd.h>```
-* In src/devices/wimax/wimax-mac-queue.h
+* In ```src/devices/wimax/wimax-mac-queue.h```
   * remove the word ```private``` from within the class definition
