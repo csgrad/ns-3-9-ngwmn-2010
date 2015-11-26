@@ -29,6 +29,14 @@ In addition, to get it compile I required the following changes:
 As part of the modifications required to make the code I created work, I had to modify the following files:
 * ```src/applications/udp-client-server/udp-server.cc```
 * ```src/applications/udp-client-server/udp-server.h```
+* ```src/devices/wifi/wifi-mac-queue.h```
+* ```src/devices/wifi/wifi-mac-queue.cc```
+* ```src/devices/wifi/dca-txop.cc```
+* ```src/devices/wifi/dca-txop.h```
+* ```src/common/packet.h```
+* ```src/common/packet.cc```
+* ```src/common/nix-vector.h```
+* ```src/common/nix-vector.cc```
 
 ### Compiling and Running the Experiment ###
 ```./waf --run=scratch/ngwmn```
