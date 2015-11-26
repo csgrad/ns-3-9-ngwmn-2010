@@ -11,3 +11,5 @@ In addition, to get it compile I required the following changes:
 
 * In src/core/unix-system-wall-clock-ms.cc
   * ```#include <unistd.h>```
+* In src/common/spectrum-model.h
+  * ```#include <cstddef>```
