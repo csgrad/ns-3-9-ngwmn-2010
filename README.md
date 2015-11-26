@@ -6,3 +6,8 @@ Since it has been some time since this code has been compiled - there are few "t
 See this link: https://www.nsnam.org/wiki/HOWTO_build_old_versions_of_ns-3_on_newer_compilers
 
 So far I require this to build the simulator: CXXFLAGS="-Wall" ./waf configure --disable-python
+
+In addition, to get it compile I required the following changes:
+
+* In src/core/unix-system-wall-clock-ms.cc
+  * ```#include <unistd.h>```
