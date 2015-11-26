@@ -11,7 +11,7 @@ So far I require this to build the simulator: CXXFLAGS="-Wall" ./waf configure -
 
 In addition, to get it compile I required the following changes:
 
-* In src/core/unix-system-wall-clock-ms.cc
+* In src/core/unix-system-wall-clock-ms.cc and src/helper/animation-interface.cc
   * ```#include <unistd.h>```
 * In src/common/spectrum-model.h
   * ```#include <cstddef>```
